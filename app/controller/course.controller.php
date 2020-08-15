@@ -110,6 +110,7 @@ if (isset($_POST['deleteCourse'])) {
     $coursesClass->deleteCourse($id);
     $coursesClass->deleteCourseUser($id);
     $video = $_POST['video'];
+    chmod("../video/" . $video, 0777);
     unlink("../video/" . $video);
     $psImg = $photosClass->selectPhotoId('course', $id);
     foreach ($psImg as $pImg) {

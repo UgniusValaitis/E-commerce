@@ -1,6 +1,6 @@
 <?php
 
-$rootDir = "/programing/kas/public/index.php";
+$rootDir = "/programing/Ecommerce/public/index.php";
 $pathView = '../app/view/';
 $pathStyles = '../app/styles/';
 $pathIncludes = '../app/includes/';
