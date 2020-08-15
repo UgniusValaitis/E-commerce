@@ -1,0 +1,22 @@
+div.container form {
+  text-align: center;
+}
+div.container form input {
+  -webkit-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  margin: 10px;
+}
+div.container form textarea#address {
+  -webkit-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  max-width: 346px;
+  width: 100%;
+  height: 40px;
+}
+div.container form button.submit {
+  -webkit-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+}

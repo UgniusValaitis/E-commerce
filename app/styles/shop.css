@@ -1,0 +1,360 @@
+div.space a {
+  font-size: 18.75px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+}
+div.space h3 {
+  display: inline;
+}
+div.shopGrid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-rows: 40px auto;
+}
+div.shopGrid div.search {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 10px;
+}
+div.shopGrid div.shop {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 10px;
+}
+div.shopGrid aside {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background: var(--nav-color);
+  min-height: 100vh;
+  padding: 10px;
+}
+/* ASIDE */
+div.shopGrid aside h3 {
+  text-align: center;
+  margin: 10px 0;
+}
+div.shopGrid aside i#menuImage {
+  display: none;
+}
+div.shopGrid aside h4 {
+  margin-top: 20px;
+}
+div.shopGrid aside a {
+  margin-top: 2px;
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+}
+div.shopGrid aside a:hover {
+  font-weight: bolder;
+}
+div.shopGrid aside a.cart {
+  margin-top: 20px;
+  font-weight: bolder;
+}
+/* SEARCH */
+div.shopGrid div.search form {
+  text-align: center;
+}
+div.shopGrid div.search form input {
+  -webkit-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  width: 70%;
+}
+div.shopGrid div.search form button {
+  -webkit-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+}
+/* SHOP */
+div.shopGrid div.shop div.product {
+  padding-bottom: 10px;
+  margin: 30px 10px;
+}
+div.shopGrid div.shop div.odd {
+  display: grid;
+  grid-template-columns: 1.5fr 135px 1fr;
+  grid-template-rows: 1fr 3fr 30px;
+}
+
+div.shopGrid div.shop div.odd h2 {
+  -webkit-text-shadow: -5px -5px 2px #000000;
+  -moz-text-shadow: -5px -5px 2px #000000;
+  text-shadow: -5px -5px 2px #000000;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  align-self: end;
+  justify-self: center;
+}
+div.shopGrid div.shop div.odd p {
+  z-index: 2;
+  -webkit-text-shadow: -5px -5px 2px #000000;
+  -moz-text-shadow: -5px -5px 2px #000000;
+  text-shadow: -5px -5px 2px #000000;
+  margin-right: 10px;
+  text-align: center;
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+div.shopGrid div.shop div.odd h3 {
+  -webkit-text-shadow: -5px -5px 2px #000000;
+  -moz-text-shadow: -5px -5px 2px #000000;
+  text-shadow: -5px -5px 2px #000000;
+  justify-self: end;
+  align-self: center;
+}
+div.shopGrid div.shop div.odd a {
+  -webkit-box-shadow: -4px -4px 10px 5px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -4px -4px 10px 5px rgba(0, 0, 0, 1);
+  box-shadow: -4px -4px 10px 5px rgba(0, 0, 0, 1);
+  margin-right: 30px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: end;
+  align-self: center;
+}
+div.shopGrid div.shop div.odd a:hover {
+  font-weight: bolder;
+}
+div.shopGrid div.shop div.odd a i {
+  font-size: 0.8rem;
+}
+div.shopGrid div.shop div.odd img {
+  -webkit-box-shadow: -10px -10px 10px 9px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -10px -10px 10px 9px rgba(0, 0, 0, 1);
+  box-shadow: -10px -10px 10px 9px rgba(0, 0, 0, 1);
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+div.shopGrid div.shop div.even {
+  display: grid;
+  grid-template-columns: 1fr 135px 1.5fr;
+  grid-template-rows: 1fr 3fr 30px;
+}
+
+div.shopGrid div.shop div.even h2 {
+  -webkit-text-shadow: 5px -5px 2px #000000;
+  -moz-text-shadow: 5px -5px 2px #000000;
+  text-shadow: 5px -5px 2px #000000;
+  grid-column: 2/4;
+  grid-row: 1/2;
+  align-self: end;
+  justify-self: center;
+}
+div.shopGrid div.shop div.even p {
+  z-index: 2;
+  -webkit-text-shadow: 5px -5px 2px #000000;
+  -moz-text-shadow: 5px -5px 2px #000000;
+  text-shadow: 5px -5px 2px #000000;
+  margin-left: 10px;
+  text-align: center;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+div.shopGrid div.shop div.even h3 {
+  -webkit-text-shadow: -5px -5px 2px #000000;
+  -moz-text-shadow: -5px -5px 2px #000000;
+  text-shadow: -5px -5px 2px #000000;
+  justify-self: start;
+  align-self: center;
+}
+div.shopGrid div.shop div.even a {
+  -webkit-box-shadow: 4px -4px 10px 5px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px -4px 10px 5px rgba(0, 0, 0, 1);
+  box-shadow: 4px -4px 10px 5px rgba(0, 0, 0, 1);
+  margin-left: 30px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: start;
+  align-self: center;
+}
+div.shopGrid div.shop div.even a:hover {
+  font-weight: bolder;
+}
+div.shopGrid div.shop div.even a i {
+  font-size: 0.8rem;
+}
+div.shopGrid div.shop div.even img {
+  -webkit-box-shadow: 10px -10px 10px 9px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px -10px 10px 9px rgba(0, 0, 0, 1);
+  box-shadow: 10px -10px 10px 9px rgba(0, 0, 0, 1);
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+@media (max-width: 870px) {
+  div.shopGrid {
+    display: block;
+  }
+  div.shopGrid aside {
+    min-height: 0;
+    border-radius: 5px;
+  }
+  div.shopGrid aside div.top {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  div.shopGrid aside h3 {
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+  }
+  div.shopGrid aside i#menuImage {
+    font-size: 0.8rem;
+    margin: auto 0;
+    display: initial;
+    transition: 1s linear;
+  }
+  div.shopGrid aside h4 {
+    margin-top: 10px;
+    text-align: center;
+  }
+  div.shopGrid aside a {
+    margin-top: 2px;
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+  }
+  div.shopGrid aside a:hover {
+    font-weight: bolder;
+  }
+  div.shopGrid aside a.cart {
+    margin-top: 20px;
+    font-weight: bolder;
+  }
+  /* APPEARING FILTERS */
+  div.shopGrid aside div.top:hover {
+    cursor: pointer;
+  }
+  div.shopGrid aside div.bottom {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height, 1s linear;
+    -webkit-transition: max-height, 1s linear;
+    -moz-transition: max-height, 1s linear;
+    -ms-transition: max-height, 1s linear;
+  }
+  div.shopGrid aside div.bottom.active {
+    max-height: 300px;
+    transition: max-height, 1s linear;
+    -webkit-transition: max-height, 1s linear;
+    -moz-transition: max-height, 1s linear;
+    -ms-transition: max-height, 1s linear;
+  }
+  div.shopGrid aside div.top.active i {
+    transition: 1s linear;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 740px) {
+  div.shopGrid div.shop div.odd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 30px 30px auto;
+  }
+
+  div.shopGrid div.shop div.odd h2 {
+    padding-right: 10px;
+    z-index: 2;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    text-align: center;
+  }
+  div.shopGrid div.shop div.odd p {
+    padding-top: 10px;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  div.shopGrid div.shop div.odd h3 {
+    justify-self: center;
+    align-self: center;
+  }
+  div.shopGrid div.shop div.odd a {
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: end;
+  }
+
+  div.shopGrid div.shop div.odd img {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+
+  div.shopGrid div.shop div.even {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 30px 30px auto;
+  }
+
+  div.shopGrid div.shop div.even h2 {
+    padding-right: 10px;
+    z-index: 2;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    text-align: center;
+  }
+  div.shopGrid div.shop div.even p {
+    padding-top: 10px;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  div.shopGrid div.shop div.even h3 {
+    justify-self: center;
+    align-self: center;
+  }
+  div.shopGrid div.shop div.even a {
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: end;
+  }
+
+  div.shopGrid div.shop div.even img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+}
+
+@media (max-width: 400px) {
+  div.shopGrid div.shop div.odd h2 {
+    font-size: 1.2rem;
+  }
+  div.shopGrid div.shop div.even h2 {
+    font-size: 1.2rem;
+  }
+  div.shopGrid div.shop div.odd p {
+    font-size: 0.8rem;
+  }
+  div.shopGrid div.shop div.even p {
+    font-size: 0.8rem;
+  }
+  div.shopGrid div.shop div.odd h3 {
+    font-size: 1rem;
+  }
+  div.shopGrid div.shop div.even h3 {
+    font-size: 1rem;
+  }
+  div.shopGrid div.shop div.odd a {
+    font-size: 0.8rem;
+  }
+  div.shopGrid div.shop div.even a {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,758 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 68.5px;
+}
+/* NAV */
+
+.on {
+  opacity: 1;
+}
+.off {
+  opacity: 0.6;
+}
+div#nav {
+  padding: 10px 20px 5px;
+  font-size: 1.4rem;
+  background: var(--footer-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+div#nav div#left {
+  display: flex;
+}
+div#nav div#left div#lang {
+  display: flex;
+  align-content: center;
+}
+div#nav div#left div#lang a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin: auto;
+}
+div#nav div#left div#lang i {
+  align-content: center;
+  font-size: 0.8rem;
+  margin: auto 3px;
+}
+div#nav div#mainNavBtn {
+  margin: auto 20px auto 0;
+  display: inline-block;
+  opacity: 0.6;
+}
+div#nav div#mainNavBtn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+div#nav div#mainNavBtn div.bar1,
+div#nav div#mainNavBtn div.bar2,
+div#nav div#mainNavBtn div.bar3 {
+  width: 19px;
+  height: 3px;
+  background: #ffffff;
+  margin: 3.5px 0;
+  transition: 0.6s;
+  -webkit-transition: 0.6;
+  -o-transition: 0.6;
+}
+
+.active .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+  -moz-transform: rotate(-45deg) translate(-3px, 3px);
+  -ms-transform: rotate(-45deg) translate(-3px, 3px);
+  -o-transform: rotate(-45deg) translate(-3px, 3px);
+  transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.active .bar2 {
+  opacity: 0;
+}
+
+.active .bar3 {
+  -webkit-transform: rotate(45deg) translate(-5.25px, -6px);
+  -moz-transform: rotate(45deg) translate(-5.25px, -6px);
+  -ms-transform: rotate(45deg) translate(-5.25px, -6px);
+  -o-transform: rotate(45deg) translate(-5.25px, -6px);
+
+  transform: rotate(45deg) translate(-5.25px, -6px);
+}
+div#nav div#mainProfileBtn {
+  margin: auto 0;
+  opacity: 0.6;
+}
+div#nav div#mainProfileBtn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+div#nav div#mainProfileBtn i {
+  margin-left: 55.56px;
+}
+div#nav div#mainProfileBtn i.fas.fa-user {
+  padding-right: 7.5px;
+}
+
+div#nav div#mainProfileBtn.active {
+  animation: fade 1s linear;
+}
+div#nav div#mainProfileBtn.close {
+  animation: fade2 1s linear;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes fade2 {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+div#nav img {
+  color: var(--text-color);
+}
+/* MAIN NAV LIST */
+div#mainNav {
+  background: var(--nav-color);
+  -webkit-box-shadow: inset 0px 50px 56px -25px var(--footer-color);
+  -moz-box-shadow: inset 0px 50px 56px -25px var(--footer-color);
+  box-shadow: inset 0px 50px 56px -25px var(--footer-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height, 2s linear;
+  -webkit-transition: max-height, 2s linear;
+  -moz-transition: max-height, 2s linear;
+  -ms-transition: max-height, 2s linear;
+}
+
+div#mainNav.show {
+  max-height: 200px;
+  overflow: hidden;
+  transition: max-height, 2s linear;
+  -webkit-transition: max-height, 2s linear;
+  -moz-transition: max-height, 2s linear;
+  -ms-transition: max-height, 2s linear;
+}
+
+div#mainNav a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 0 auto 0;
+  padding: 5px 0 0;
+}
+div#mainNav a:hover {
+  margin: 0 auto 0;
+  padding: 0 0 5px;
+  font-weight: bolder;
+}
+
+div#mainNav a#nav1.active {
+  opacity: 0;
+  animation: appear;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+div#mainNav a#nav2.active {
+  opacity: 0;
+  animation: appear;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+div#mainNav a#nav3.active {
+  opacity: 0;
+  animation: appear;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+div#mainNav a#nav4.active {
+  opacity: 0;
+  animation: appear;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+div#mainNav a#nav5.active {
+  opacity: 0;
+  animation: appear;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+div#mainNav a#nav1 {
+  opacity: 1;
+  animation: disappear;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+div#mainNav a#nav2 {
+  opacity: 1;
+  animation: disappear;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+div#mainNav a#nav3 {
+  opacity: 1;
+  animation: disappear;
+  animation-duration: 1s;
+  animation-delay: 1.3s;
+  animation-fill-mode: forwards;
+}
+div#mainNav a#nav4 {
+  opacity: 1;
+  animation: disappear;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+div#mainNav a#nav5 {
+  opacity: 1;
+  margin-bottom: 5px;
+  animation: disappear;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* MAIN PROFILE */
+
+div#mainProfile {
+  background: var(--nav-color);
+  color: var(--text-color);
+  -webkit-box-shadow: inset 0px 50px 56px -25px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 50px 56px -25px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 50px 56px -25px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height, 2s linear;
+  -webkit-transition: max-height, 2s linear;
+  -moz-transition: max-height, 2s linear;
+  -ms-transition: max-height, 2s linear;
+}
+
+div#mainProfile.show {
+  max-height: 300px;
+  overflow: hidden;
+  transition: max-height, 2s linear;
+  -webkit-transition: max-height, 2s linear;
+  -moz-transition: max-height, 2s linear;
+  -ms-transition: max-height, 2s linear;
+}
+div#mainProfile.login {
+  max-height: 300px;
+  overflow: hidden;
+  transition: max-height, 2s linear;
+  -webkit-transition: max-height, 2s linear;
+  -moz-transition: max-height, 2s linear;
+  -ms-transition: max-height, 2s linear;
+}
+div#mainProfile a {
+  margin: 0 auto 5px;
+  padding: 5px 0 0;
+  color: var(--text-color);
+  text-decoration: none;
+}
+div#mainProfile a:hover {
+  margin: 0px auto 5px;
+  padding: 0 0 5px;
+  font-weight: bolder;
+}
+div#mainProfile form {
+  margin: 0 auto 0;
+  padding: 5px 0 0;
+}
+div#mainProfile div#login {
+  margin: 0 auto 0;
+  padding: 5px 0 0;
+}
+button.navBtn {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  background: none;
+  color: var(--text-color);
+  border: none;
+  width: 100%;
+  margin: 5px auto 0;
+  padding-top: 2px;
+}
+button.navBtn:hover {
+  font-weight: bolder;
+  margin: 0px auto 5px;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+div#mainProfile a#signup {
+  margin: 0 auto 0;
+  padding: 5px 0 0;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+div#mainProfile a#signup:hover {
+  margin: 0px auto 0px;
+  padding: 0 0 5px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+div#mainProfile a#pwdRedo {
+  margin: 0px auto 5px;
+  padding: 5px 0 0;
+  color: var(--text-color);
+  text-decoration: none;
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
+
+div#mainProfile a#pwdRedo:hover {
+  margin: 0 auto 5px;
+  padding: 0 0 5px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+div#mainProfile.hidden a#item1 {
+  opacity: 1;
+  animation: disappear;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+div#mainProfile.hidden a#item2 {
+  opacity: 1;
+  animation: disappear;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+div#mainProfile.hidden a#item3 {
+  opacity: 1;
+  animation: disappear;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+div#mainProfile.hidden form input#login1 {
+  opacity: 1;
+  animation: disappear;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+div#mainProfile.hidden form input#login2 {
+  opacity: 1;
+  animation: disappear;
+  animation-duration: 1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+div#mainProfile.hidden form button.navBtn {
+  opacity: 1;
+  animation: disappear;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+div#mainProfile.hidden a#signup {
+  opacity: 1;
+  animation: disappear;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+div#mainProfile.hidden a#pwdRedo {
+  opacity: 0.6;
+  animation: disappearHalf;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes disappearHalf {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+div#mainProfile.show a#item1 {
+  opacity: 0;
+  animation: appear;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+div#mainProfile.show a#item2 {
+  opacity: 0;
+  animation: appear;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+div#mainProfile.show a#item3 {
+  opacity: 0;
+  animation: appear;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+div#mainProfile.show form input#login1 {
+  opacity: 0;
+  animation: appear;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+div#mainProfile.show form input#login2 {
+  opacity: 0;
+  animation: appear;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+div#mainProfile.show form button.navBtn {
+  opacity: 0;
+  animation: appear;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+div#mainProfile.show a#signup {
+  opacity: 0;
+  animation: appear;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+div#mainProfile.show a#pwdRedo {
+  opacity: 0;
+  animation: appearHalf;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appearHalf {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+div#mainProfile.login form input#login1 {
+  opacity: 1;
+}
+
+div#mainProfile.login form input#login2 {
+  opacity: 1;
+}
+div#mainProfile.login form button.navBtn {
+  opacity: 1;
+}
+div#mainProfile.login a#signup {
+  opacity: 1;
+}
+div#mainProfile.login a#pwdRedo {
+  opacity: 0.6;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOOTER */
+div#footer {
+  background: var(--footer-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 5px 0;
+  font-size: 0.7rem;
+}
+div#footerNav {
+  /* height: 100px; */
+  max-width: 550px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+div#footerNav div.footerNavItem {
+  margin: auto;
+}
+div#footerNav div.footerNavItem a {
+  display: block;
+  text-align: center;
+  color: var(--text-color);
+  text-decoration: none;
+  opacity: 0.6;
+}
+div#footerNav div.footerNavItem a:hover {
+  opacity: 1;
+}
+div#footerNav div.footerNavItem p {
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
+div#fixedFooter {
+  background: var(--nav-color);
+  color: var(--text-color);
+  -webkit-box-shadow: inset 0px -61px 24px -22px var(--footer-color);
+  -moz-box-shadow: inset 0px -61px 24px -22px var(--footer-color);
+  box-shadow: inset 0px -61px 24px -22px var(--footer-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* SUBSCRIPTION */
+
+div#subscribe {
+  text-align: center;
+  margin: 20px auto;
+  padding-bottom: 10px;
+}
+div#subscribe a {
+  -webkit-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  font-size: 20px;
+}
+div#subscribe a i {
+  font-size: 15px;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* PHONE */
+@media (max-width: 550px) {
+  :root {
+    font-size: 20px;
+  }
+  div#nav {
+    font-size: 1rem;
+  }
+  div#nav div#mainNavBtn {
+    opacity: 1;
+  }
+  div#nav div#mainNavBtn div.bar1,
+  div#nav div#mainNavBtn div.bar2,
+  div#nav div#mainNavBtn div.bar3 {
+    width: 17px;
+    height: 3px;
+    margin: 2px 0 3.5px;
+  }
+
+  .active .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    -moz-transform: rotate(45deg) translate(-6px, -6px);
+    -ms-transform: rotate(45deg) translate(-6px, -6px);
+    -o-transform: rotate(45deg) translate(-6px, -6px);
+
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+  div#nav div#mainProfileBtn {
+    opacity: 1;
+  }
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade2 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  div#nav div#mainProfileBtn i {
+    margin-left: 59.56px;
+  }
+  div#nav div#mainProfileBtn i.fas.fa-user {
+    padding-right: 5.62px;
+  }
+
+  div#mainProfile div#login {
+    display: flex;
+    flex-direction: column;
+  }
+  div#mainProfile div#login input#login1 {
+    margin: 0 0 7px;
+  }
+
+  div#mainProfile form input#login1 {
+    opacity: 1;
+    animation: appear;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+
+  div#mainProfile a#pwdRedo {
+    opacity: 0.6;
+    animation: appearHalf;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+  }
+
+  div#mainProfile.show form input#login1 {
+    opacity: 0;
+    animation: appear;
+    animation-duration: 1s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+  }
+
+  div#mainProfile.show form input#login2 {
+    opacity: 0;
+    animation: appear;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+  }
+  div#mainProfile.show form button.navBtn {
+    opacity: 0;
+    animation: appear;
+    animation-duration: 1s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+  }
+  div#mainProfile.show a#signup {
+    opacity: 0;
+    animation: appear;
+    animation-duration: 1s;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+  }
+  div#mainProfile.show a#pwdRedo {
+    opacity: 0;
+    animation: appearHalf;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+  }
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /* FOOTER */
+  body {
+    margin-bottom: 168.5px;
+  }
+  div#footerNav {
+    margin: auto;
+    display: block;
+  }
+  div#footerNav div.footerNavItem {
+    width: 100px;
+    margin: 5px auto;
+    border-bottom: solid 1px var(--footer-color);
+  }
+  div#footerNav div.footerNavItem a {
+    display: block;
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: none;
+    opacity: 0.6;
+    margin: auto;
+  }
+
+  div#footerNav div.footerNavItem p {
+    text-align: center;
+    opacity: 0.6;
+    font-size: 0.8rem;
+  }
+}

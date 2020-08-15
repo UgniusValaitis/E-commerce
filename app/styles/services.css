@@ -1,0 +1,130 @@
+.serviceRight {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.serviceRight h2 {
+  text-align: center;
+  -webkit-text-shadow: -5px -5px 2px #000000;
+  -moz-text-shadow: -5px -5px 2px #000000;
+  text-shadow: -5px -5px 2px #000000;
+  margin-right: 10px;
+  justify-self: center;
+  align-self: end;
+}
+.serviceRight p {
+  text-align: center;
+  -webkit-text-shadow: -5px -5px 2px #000000;
+  -moz-text-shadow: -5px -5px 2px #000000;
+  text-shadow: -5px -5px 2px #000000;
+  margin: 10px 10px 0 0;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: start;
+}
+.serviceRight div.photo {
+  -webkit-box-shadow: -10px -10px 10px 9px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -10px -10px 10px 9px rgba(0, 0, 0, 1);
+  box-shadow: -10px -10px 10px 9px rgba(0, 0, 0, 1);
+  overflow: hidden;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  justify-self: center;
+  align-self: center;
+  width: 95%;
+}
+.serviceRight div.photoActive {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+/* 
+.serviceRight div.photoActive img {
+} */
+
+/* LEFT */
+.serviceLeft {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 3fr;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+.serviceLeft h2 {
+  text-align: center;
+  -webkit-text-shadow: 5px -5px 2px #000000;
+  -moz-text-shadow: 5px -5px 2px #000000;
+  text-shadow: 5px -5px 2px #000000;
+  margin-right: 10px;
+  justify-self: center;
+  align-self: end;
+}
+.serviceLeft p {
+  text-align: center;
+  -webkit-text-shadow: 5px -5px 2px #000000;
+  -moz-text-shadow: 5px -5px 2px #000000;
+  text-shadow: 5px -5px 2px #000000;
+  margin: 10px 10px 0 0;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: start;
+}
+
+.serviceLeft div.photo {
+  -webkit-box-shadow: -10px -10px 10px 9px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -10px -10px 10px 9px rgba(0, 0, 0, 1);
+  box-shadow: -10px -10px 10px 9px rgba(0, 0, 0, 1);
+  overflow: hidden;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  justify-self: center;
+  align-self: center;
+  width: 95%;
+}
+.serviceLeft div.photoActive {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+@media (max-width: 550px) {
+  .serviceRight {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .serviceRight p {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .serviceRight div.photo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .serviceRight h2 {
+    z-index: 2;
+    text-align: center;
+    align-self: center;
+  }
+  .serviceLeft {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .serviceLeft p {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .serviceLeft div.photo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .serviceLeft h2 {
+    text-align: center;
+    align-self: center;
+  }
+}

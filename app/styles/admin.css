@@ -1,0 +1,558 @@
+div.space a {
+  font-size: 18.75px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+}
+div.space h3 {
+  display: inline;
+}
+div.shopGrid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-rows: 40px auto;
+}
+
+div.shopGrid aside {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background: var(--nav-color);
+  min-height: 100vh;
+  padding: 10px;
+}
+div.shopGrid div.main {
+  grid-row: 1/3;
+}
+/* ASIDE */
+div.shopGrid aside h3 {
+  text-align: center;
+  margin: 10px 0;
+}
+div.shopGrid aside i {
+  display: none;
+}
+
+div.shopGrid aside a.cart {
+  display: block;
+  margin-top: 20px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+div.shopGrid aside a.cart:hover {
+  font-weight: bolder;
+}
+/* CONTENT */
+div.content h1,
+div.content h2,
+div.content h3,
+div.content h4,
+div.content h5,
+div.content h6,
+div.content p,
+div.content label {
+  -webkit-text-shadow: -5px -5px 2px #000000;
+  -moz-text-shadow: -5px -5px 2px #000000;
+  text-shadow: -5px -5px 2px #000000;
+}
+div.content input,
+div.content textarea,
+div.content select,
+div.content button,
+div.content a,
+div.content img {
+  -webkit-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+  box-shadow: -2px -2px 6px 2px rgba(0, 0, 0, 1);
+}
+
+/* HOME */
+div.content {
+  text-align: center;
+  padding-bottom: 5px;
+}
+div.content h2 {
+  text-align: center;
+  margin: 5px auto 10px;
+}
+div.content form div {
+  text-align: center;
+}
+div.content form div label {
+  display: block;
+}
+div.content form div textarea {
+  width: 90%;
+  height: 80px;
+  margin: 5px auto 5px;
+}
+div.content form button {
+  display: block;
+}
+div.content form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+div.content form div.photo {
+  grid-column: 1/3;
+}
+div.content form div.photo input {
+  margin: 5px 0 5px;
+}
+div.content form button {
+  grid-column: 1/3;
+  margin: 5px auto 5px;
+}
+
+div.content div.work {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 10px auto 10px;
+}
+div.content div.work p {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 5px;
+}
+div.content div.work img {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+div.content div.work h3 {
+  align-self: center;
+  justify-self: center;
+}
+div.content div.work a {
+  justify-self: center;
+  align-self: start;
+
+  grid-row: 2/3;
+}
+div.content div.work form button {
+  margin: auto;
+}
+div.workPhoto {
+  max-width: 400px;
+  width: 70%;
+  margin: auto;
+}
+
+/* SERVICES */
+div.service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px auto 10px;
+}
+div.service h3 {
+  grid-column: 1/3;
+  align-self: end;
+  justify-self: center;
+}
+div.service img {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+div.service a {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: end;
+}
+div.service form {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+/* SERVICE EDIT AND CREATE */
+div.servicePhoto {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 400px;
+  width: 70%;
+  margin: 5px auto 5px;
+}
+div.servicePhoto form {
+  align-self: center;
+  justify-self: center;
+}
+/* SHOP */
+div.content h3 {
+  margin: 5px auto 10px;
+}
+div.content div.product {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 10px auto;
+}
+div.content div.product h4.productTitle {
+  align-self: end;
+  justify-self: center;
+}
+div.content div.product img {
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+div.content div.product a {
+  align-self: center;
+  justify-self: center;
+}
+div.content div.product form {
+  align-self: center;
+  justify-self: center;
+}
+div.content div.search form {
+  display: initial;
+  text-align: center;
+}
+div.content div.search form input {
+  display: inline-block;
+}
+div.content div.search form button {
+  display: inline-block;
+}
+/* FILTERS EDIT AND CREATE */
+div.content div.group {
+  text-align: start;
+}
+div.content div.group form {
+  display: inline-block;
+}
+div.content div.group h3 {
+  display: inline-block;
+  margin: 5px 10px;
+}
+div.content div.filters {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+div.content div.filters div.filter h4 {
+  display: inline-block;
+  margin: 5px 10px;
+}
+div.content div.filters div.filter form {
+  display: inline-block;
+}
+/* PRODUCT EDIT AND CREATE */
+div.content div.productPhoto form button {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+div.content div.productPhoto form input {
+  align-self: center;
+  justify-self: center;
+}
+div.content div.productVideo form button {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+div.content div.productVideo form input {
+  align-self: center;
+  justify-self: center;
+}
+div.productPhotos {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 400px;
+  width: 70%;
+  margin: 5px auto 5px;
+}
+div.productPhotos form {
+  align-self: center;
+  justify-self: center;
+}
+div.content div.productFilters form button {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+div.content div.productFilters form select {
+  align-self: center;
+  justify-self: center;
+  min-width: 80%;
+}
+/* COURSES */
+/* COURSES EDIT/CREATE */
+div.content div.displayVideo video {
+  max-width: 80%;
+}
+
+/* CONTACTS */
+div.content form.contacts {
+  display: initial;
+}
+div.content form.contacts input {
+  display: inline-block;
+  margin-right: 5px;
+}
+div.content form.contacts button {
+  display: inline-block;
+}
+div.content div.contact form {
+  display: inline-block;
+}
+div.content div.contact h4 {
+  display: inline-block;
+  margin-right: 5px;
+}
+/* ORDERS */
+div.orderNew {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  text-align: start;
+  margin: 5px 10px;
+  border: var(--nav-color) 1px solid;
+}
+div.orderNew a {
+  grid-column: 2/3;
+  grid-row: 1/5;
+  align-self: center;
+  justify-self: center;
+}
+div.orderOld {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  margin: 5px 10px;
+  border: var(--nav-color) 1px solid;
+  text-align: start;
+}
+div.orderOld form {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+div.orderOld a {
+  grid-row: 3/5;
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+/* ORDER INFO ITEMS */
+div.orderItem {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 5px 10px;
+}
+div.orderItem div.title {
+  align-self: center;
+  justify-self: center;
+}
+div.orderItem h4 {
+  align-self: center;
+  justify-self: center;
+}
+form#send {
+  display: inline-block;
+  margin-left: 10px;
+}
+form#send button {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+/* SUBSCRIPTION */
+div.content div.subsPhoto form button {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+div.content div.subsPhoto form input {
+  align-self: center;
+  justify-self: center;
+}
+div.content a.subs {
+  display: block;
+  width: 129px;
+  margin: 20px auto;
+}
+div.content div.subscriber {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 10px auto;
+}
+div.content div.subscriber h4.address {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+@media (max-width: 870px) {
+  div.shopGrid {
+    display: block;
+  }
+  div.shopGrid aside {
+    min-height: 0;
+    border-radius: 5px;
+  }
+  div.shopGrid aside div.top {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  div.shopGrid aside h3 {
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+  }
+  div.shopGrid aside i {
+    font-size: 0.8rem;
+    margin: auto 0;
+    display: initial;
+    transition: 1s linear;
+  }
+  div.shopGrid aside h4 {
+    margin-top: 10px;
+    text-align: center;
+  }
+  div.shopGrid aside a {
+    margin-top: 2px;
+    text-align: center;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+  }
+  div.shopGrid aside a:hover {
+    font-weight: bolder;
+  }
+  div.shopGrid aside a.cart {
+    margin-top: 20px;
+    font-weight: bolder;
+  }
+  /* APPEARING FILTERS */
+  div.shopGrid aside div.top:hover {
+    cursor: pointer;
+  }
+  div.shopGrid aside div.bottom {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height, 1s linear;
+    -webkit-transition: max-height, 1s linear;
+    -moz-transition: max-height, 1s linear;
+    -ms-transition: max-height, 1s linear;
+  }
+  div.shopGrid aside div.bottom.active {
+    max-height: 300px;
+    transition: max-height, 1s linear;
+    -webkit-transition: max-height, 1s linear;
+    -moz-transition: max-height, 1s linear;
+    -ms-transition: max-height, 1s linear;
+  }
+  div.shopGrid aside div.top.active i {
+    transition: 1s linear;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 640px) {
+  div.content form {
+    display: initial;
+  }
+  div.content div.work {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 10px auto 10px;
+  }
+  div.content div.work p {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: 5px;
+  }
+  div.content div.work img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  div.content div.work h3 {
+    align-self: center;
+    justify-self: center;
+  }
+  div.content div.work a {
+    justify-self: center;
+    align-self: start;
+
+    grid-row: 3/4;
+  }
+  div.content div.work form button {
+    margin: auto;
+  }
+  div.content div.work form {
+    justify-self: start;
+  }
+
+  /* SERVICE */
+  div.service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  div.service h3 {
+    align-self: center;
+  }
+  div.service img {
+    grid-row: 1/2;
+  }
+  div.service a {
+    grid-column: 1/3;
+    justify-self: center;
+  }
+  div.service form {
+    grid-column: 3/4;
+  }
+  /* SHOP */
+  /* FILTERS EDIT/CREATE */
+  div.content div.filters {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  /* SHOP */
+  div.content div.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 10px auto;
+  }
+  div.content div.product h4.productTitle {
+    align-self: center;
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+  div.content div.product img {
+    grid-row: 2/5;
+    grid-column: 1/2;
+  }
+  div.content div.product a {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  div.content div.product form {
+    align-self: end;
+    justify-self: center;
+  }
+  /* FILTERS EDIT/CREATE */
+  div.content div.filters {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* ORDER INFO ITEMS */
+  div.orderItem {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  div.orderItem div.title {
+    align-self: end;
+    justify-self: center;
+  }
+  div.orderItem h4 {
+    align-self: start;
+    justify-self: center;
+  }
+  div.orderItem img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  /* SUBSCRIBERS PAGE */
+  div.content div.subscriber {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+}
